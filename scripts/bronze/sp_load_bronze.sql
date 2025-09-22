@@ -17,7 +17,7 @@ BEGIN TRY
 	PRINT '==> Loading cust_info Data'
 	TRUNCATE TABLE bronze.crm_cust_info;
 	BULK INSERT bronze.crm_cust_info
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -30,7 +30,7 @@ BEGIN TRY
 	PRINT '==> Loading prd_info Data'
 	TRUNCATE TABLE bronze.crm_prd_info;
 	BULK INSERT bronze.crm_prd_info
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_crm\prd_info.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -42,7 +42,7 @@ BEGIN TRY
 	PRINT '==> Loading sales_details Data'
 	TRUNCATE TABLE bronze.crm_sales_details;
 	BULK INSERT bronze.crm_sales_details
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -54,7 +54,7 @@ BEGIN TRY
 	PRINT '==> Loading cust_az12 Data'
 	TRUNCATE TABLE bronze.erp_cust_az12;
 	BULK INSERT bronze.erp_cust_az12
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -66,7 +66,7 @@ BEGIN TRY
 	PRINT '==> Loading loc_a101 Data'
 	TRUNCATE TABLE bronze.erp_loc_a101;
 	BULK INSERT bronze.erp_loc_a101
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_erp\loc_a101.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -78,7 +78,7 @@ BEGIN TRY
 	PRINT '==> Loading px_cat_g1v2 Data'
 	TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 	BULK INSERT bronze.erp_px_cat_g1v2
-	FROM 'F:\RT8U\sql-data-warehouse-project\datasets\source_erp\px_cat_g1v2.csv'
+	FROM 'F:\sql-data-warehouse-project\datasets\source_erp\px_cat_g1v2.csv'
 	WITH (
 		FIRSTROW = 2,
 		FIELDTERMINATOR = ',',
@@ -100,3 +100,4 @@ BEGIN CATCH
 END CATCH
 
 END
+
